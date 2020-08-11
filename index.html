@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style type="text/css">
+      @import url("ToDoListCSS.css");
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <h1>To Do List</h1>
+      <div class="td-info">
+        <p class="tdcontent">Current Date & Time</p>
+        <p class="tdcontent" id="time-date"></p>
+      </div>
+      <div class="list-table">
+        <table class="table" style="width: 100%;">
+          <colgroup>
+            <col width="10%" />
+            <col width="60%" />
+            <col width="30%" />
+          </colgroup>
+          <thead>
+            <tr class="table-heding">
+              <th></th>
+              <th>Things To Do</th>
+              <th>By Time/Date</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!--<tr> --dummy data--
+              <td>
+                <input
+                  type="checkbox"
+                  class="chk-bx"
+                  onclick="checking(this)"
+                />
+              </td>
+              <td>
+                HomeWork
+              </td>
+              <td>
+                8PM
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  class="chk-bx"
+                  onclick="checking(this)"
+                />
+              </td>
+              <td>
+                Work Out
+              </td>
+              <td>
+                8/23
+              </td>
+            </tr>-->
+          </tbody>
+        </table>
+
+        <button type="button" id="add-note">Add</button>
+        <button type="button" id="del-chk">Delete Checked</button>
+        <button type="button" id="del-all">Delete All</button>
+      </div>
+    </div>
+
+    <script src="ToDoList.js"></script>
+  </body>
+</html>
